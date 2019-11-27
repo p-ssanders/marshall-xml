@@ -1,0 +1,13 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:tns="http://samsanders.dev/SimpleThing.xsd"
+  targetNamespace="http://samsanders.dev/SimpleThing.xsd"
+  elementFormDefault="qualified">
+  <xsd:complexType name="SimpleThingType">
+    <xsd:sequence>
+      <xsd:element name="name" type="xsd:string"/>
+      <xsd:element name="time" type="xsd:date"/>
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:element name="SimpleThingType" type="tns:SimpleThingType"/>
+</xsd:schema>
